@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <Response>
-    <Dial>
-        <Conference waitUrl="http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient">Conf 1</Conference>
-    </Dial>
+	<Dial>
+		<Conference>MyConference</Conference>
+	</Dial>
 </Response>

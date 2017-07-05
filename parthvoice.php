@@ -1,29 +1,24 @@
-
-
-
-<!-- <?php
-
-    // make an associative array of callers we know, indexed by phone number
-    $people = array(
-        "+14158675309"=>"Curious George",
-        "+14158675310"=>"Boots",
-        "+14158675311"=>"Virgil",
-        "+14158675312"=>"Marcel"
-    );
-
-    // if the caller is known, then greet them by name
-    // otherwise, consider them just another monkey
-    if(!$name = $people[$_REQUEST['From']])
-        $name = "Monkey";
-
-    // now greet the caller
-    header("content-type: text/xml");
-    echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+<?php
+    // The PHP Twilio helper library. Get it here http://www.twilio.com/docs/libraries/
+    require_once('twilio.php');
+ 
+    $API_VERSION = '2010-04-01';
+    $ACCOUNT_SID = 'ACf0bef51e5a407e3ace365f87a23ccb46';
+    $AUTH_TOKEN = '5e7b2c6563764d0d62dc00e18e1b5853';
+ 
+    $client = new TwilioRestClient($ACCOUNT_SID, $AUTH_TOKEN);
+ 
+    // The phone numbers of the people to be called
+    $participants = array('+6175159619', '+6175159619');
+ 
+    // Go through the participants array and call each person.
+    foreach ($participants as $particpant)
+    {
+        $vars = array(
+            'From' => '+14054001401',
+            'To' => $participant,
+            'Url' => 'http://ec2-52-14-186-132.us-east-2.compute.amazonaws.com/standardresponse.xml');
+ 
+        $response = $client->request("/$API_VERSION/Accounts/$ACCOUNT_SID/Calls", "POST", $vars);
+    }
 ?>
-<Response>
-    <Say>Hello <?php echo $name ?>.</Say>
-    <Play>http://demo.twilio.com/hellomonkey/monkey.mp3</Play>
-    <Gather numDigits="1" action="hello-monkey-handle-key.php" method="POST">
-        <Say>To speak to a real monkey, press 1.  Press any other key to start over.</Say>
-    </Gather>
-</Response> -->
