@@ -1,4 +1,7 @@
-<?php
+
+
+
+<!-- <?php
 
     // make an associative array of callers we know, indexed by phone number
     $people = array(
@@ -23,4 +26,4 @@
     <Gather numDigits="1" action="hello-monkey-handle-key.php" method="POST">
         <Say>To speak to a real monkey, press 1.  Press any other key to start over.</Say>
     </Gather>
-</Response>
+</Response> -->
