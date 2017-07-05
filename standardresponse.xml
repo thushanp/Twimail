@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Response>
-	<Dial>
+	<Dial hangupOnStar="true" action="http://ec2-52-14-186-132.us-east-2.compute.amazonaws.com/parthmsg.xml">
 		<Conference waitUrl="http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient">MyConference</Conference>
 	</Dial>
 </Response>
