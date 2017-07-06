@@ -10,9 +10,11 @@
     $client = new Client($ACCOUNT_SID, $AUTH_TOKEN);
 
     $temp = $_REQUEST['number'];
+
+    session_start();
  
     // The phone numbers of the people to be called
-    $participants = array('+16175159619', $temp);
+    $participants = array('+12122594350', $temp);
     // '+16175159619'
  
     // Go through the participants array and call each person.
@@ -30,9 +32,12 @@
         $call = $client->account->calls->create(
             $participant, // Number to call
             '+14054001401', // From a valid Twilio number
-            array("url" => "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/standardresponse.php")
+            array("url" => "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/standardresponse.php",
+                "statusCallback" => "POST",
+                "statusCallback" => "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/playvoice0.php",
+                "statusCallbackEvent" => array("completed"))
         );
-        sleep(9);
-        }catch (Exception $e) {
+
+        }catch (Exception $e){
         echo "Error: " . $e->getMessage();}
     }
