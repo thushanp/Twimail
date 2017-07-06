@@ -30,8 +30,9 @@
         $call = $client->account->calls->create(
             $participant, // Number to call
             '+14054001401', // From a valid Twilio number
-            array("url" => "http://ec2-52-14-186-132.us-east-2.compute.amazonaws.com/standardresponse.php")
+            array("url" => "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/standardresponse.php")
         );
+        sleep(9);
         }catch (Exception $e) {
         echo "Error: " . $e->getMessage();}
     }
