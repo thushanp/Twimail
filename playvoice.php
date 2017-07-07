@@ -1,12 +1,15 @@
 <?php
 require_once './vendor/autoload.php';
-use Twilio\Twiml;
-
-session_start();
+use Twilio\Twiml;        
 
 $response = new Twiml();
-$dial = $response->dial();
-$dial->number(["url" => $_SESSION['url']]);
+$response->play(
+	// $_SESSION['url'], ["loop" => "5"]
+	// $_SESSION['url']
+	// $_COOKIE['url']
+	"http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/parth.mp3"
+	);
+// $dial->number(['sendDigits' => 'wwwwwwww5555']);
 
 echo $response;
 

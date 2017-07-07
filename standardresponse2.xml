@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Play>Say your name and then press the pound key.</Play>
+    <Record action="/conference/name" finishOnKey="#" />
+</Response>

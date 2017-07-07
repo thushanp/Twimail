@@ -55,10 +55,26 @@ Now, use this form to call whomever you like:
 <br>
 <br>
 
+<?php 
+
+session_start();
+if (ini_get('register_globals'))
+{
+    foreach ($_SESSION as $key=>$value)
+    {
+        if (isset($GLOBALS[$key]))
+            unset($GLOBALS[$key]);
+    }
+} 
+
+$_COOKIE['url']=($var_value);
+
+$_?>
 
 <form method="POST" action="/parthvoice.php">
     Number you are calling: <br>
     <input type="text" name="number" value="Enter a phone number, eg. +1405235432"></input>
+    <input type="hidden" name="varname" value= <?php echo $var_value?>>
     <br>
     <input type="submit" value="Submit"></input>
 </form>

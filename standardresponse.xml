@@ -4,6 +4,6 @@
 		
 	</Play>
 	<Dial hangupOnStar="true" action="http://ec2-52-14-186-132.us-east-2.compute.amazonaws.com/parthmsg.xml">
-		<Conference>MyConference</Conference>
+		<Conference>ConferenceParth</Conference>
 	</Dial>
 </Response>
