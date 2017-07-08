@@ -24,7 +24,7 @@
         // $vars = array(
         //     'From' => '+14054001401',
         //     'To' => $participant,
-        //     'Url' => 'ec2-52-14-186-132.us-east-2.compute.amazonaws.com/standardresponse.xml');
+        //     'Url' => 'ec2-13-59-179-3552-14-186-132.us-east-2.compute.amazonaws.com/standardresponse.xml');
         // if ($participant == '+12122594350'){
         // $response = $client->request("/$API_VERSION/Accounts/$ACCOUNT_SID/Calls", "POST", $vars);
 
