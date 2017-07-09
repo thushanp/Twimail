@@ -162,25 +162,9 @@
                   } 
 
                   $_COOKIE['url']=($var_value);
-                  ?>
 
-                  <?php
-                      $('#submit').click(function()
-                        {
-                            $.ajax({
-                                url: "playvoice.php",
-                                type:'POST',
-                                data:
-                                {
-                                    url: $var_value,
-                                },
-                                success: function(msg)
-                                {
-                                    alert('Email Sent');
-                                }               
-                            });
-                        });
-                  ?>
+                  $_?>
+
 
                   <form method="POST" action="/parthvoice.php">
                       Number you are calling: <br>
