@@ -32,20 +32,7 @@
     });
     </script>
 
-    <script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            $.post("demo_test_post.asp",
-            {
-              name: "Donald Duck",
-              city: "Duckburg"
-            },
-            function(data,status){
-                alert("Data: " + data + "\nStatus: " + status);
-            });
-        });
-    });
-    </script>
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -271,6 +258,20 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.post("playvoice.php",
+            {
+              url: $varname
+            },
+            function(data,status){
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        });
+    });
+    </script>
 
 </body>
 
