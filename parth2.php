@@ -120,7 +120,9 @@
                     4. Listen to your recording here to make sure it worked and sounds the way you like. If the upload worked, the link should open a music player in your browser. If the link downloads the file, then your format is incorrect and you need to convert to MP3.</p>
                 </div>
                 <div class="col-lg-5 offset-lg-2">
-                    <img class="img-fluid" src="img/bearbull.jpg" alt="">
+                    <img class="img-fluid" src="img/bearbull.png" alt="">
+                    <br>
+
                 </div>
             </div>
 
