@@ -132,7 +132,7 @@
                     <form enctype="multipart/form-data" action="upload.php" method="POST">
                         <input type="hidden" name="MAX_FILE_SIZE"/>
                         Choose a file to upload: <input name="file" type="file" id="file"/><br />
-                        <input type="submit" value="Upload File"/>
+                        <input id = "test" type="submit" value="Upload File"/>
                     <!--     <input type="submit" value="Upload FileGlobal" />
                         <input type="submit" value="Upload FileResp"/> -->
                     </form>
@@ -165,11 +165,21 @@
 
                   $_?>
 
+
+                  <form method="POST" action="/parthvoice.php">
+<!--                   <form> -->
+                      Number you are calling: <br>
+                      <input type="text" name="number" value="Enter a phone number, eg. +1405235432"></input>
+                      <input type="hidden" name="varname" value= <?php echo $var_value?>>
+                      <br>
+                      <input type="submit" value="Submit"></input>
+                  </form>
+
                   <script>
-                      $('submit').click(function()
+                      $('#test').click(function()
                         {
                             $.ajax({
-                                url: "playvoice.php",
+                                url: "playvoice.asp",
                                 type:'POST',
                                 data:
                                 {
@@ -183,13 +193,6 @@
                         });
                   </script>
 
-                  <form method="POST" action="/parthvoice.php">
-                      Number you are calling: <br>
-                      <input type="text" name="number" value="Enter a phone number, eg. +1405235432"></input>
-                      <input type="hidden" name="varname" value= <?php echo $var_value?>>
-                      <br>
-                      <input type="submit" value="Submit"></input>
-                  </form>
               </div>
             <div class="col-lg-5">
                 <hr class="section-heading-spacer">
