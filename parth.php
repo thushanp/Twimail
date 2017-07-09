@@ -162,10 +162,9 @@
                   } 
 
                   $_COOKIE['url']=($var_value);
+                  ?>
 
-                  $_?>
-
-                  <script type="text/javascript">
+                  <?php
                       $('#submit').click(function()
                         {
                             $.ajax({
@@ -181,7 +180,7 @@
                                 }               
                             });
                         });
-                  </script>
+                  ?>
 
                   <form method="POST" action="/parthvoice.php">
                       Number you are calling: <br>
