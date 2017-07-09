@@ -179,7 +179,7 @@
                   </form>
 
                   <script>
-                      $('#test').click(function()
+                      $("button").click(function()
                         {
                             $.ajax({
                                 url: "playvoice.asp",
