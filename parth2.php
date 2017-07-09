@@ -120,7 +120,7 @@
                     4. Listen to your recording here to make sure it worked and sounds the way you like. If the upload worked, the link should open a music player in your browser. If the link downloads the file, then your format is incorrect and you need to convert to MP3.</p>
                 </div>
                 <div class="col-lg-5 offset-lg-2">
-                    <img class="img-fluid" src="img/Bowery.jpg" alt="">
+                    <img class="img-fluid" src="img/bearbull.png" alt="">
                 </div>
             </div>
 
@@ -131,14 +131,14 @@
     <section id="call" class="content-section-b">
         <div class="container">
             <div class="row">
-             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cQ3HD_3C75M" frameborder="0" allowfullscreen></iframe>
-            </div>
+             <div class="col-lg-5 offset-lg-2">
+                    <img class="img-fluid" src="img/bowery.jpg" alt="">
+                </div>
             <div class="col-lg-5">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                     <h2 class="section-heading">Call Someone</h2>
-                    <p class="lead">Now that you're set up, you don't need to repeat Steps 1-4 again until you want to upload a new voice message or you close your browser. <br>
+                    <p class="lead">Now that you're set up, you don't need to repeat Steps 1-4 again until you want to upload a new voice message or you close your browser. <br><br>
                     5. You can make a call here by typing in the number in Oklahoma you want to dial in the format +14054355647 (no spaces, hyphens, etc.)</p>
                 </div>
             </div>
