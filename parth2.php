@@ -91,7 +91,7 @@
     <header class="intro-header">
         <div class="container">
             <div class="intro-message">
-                <h1>Cherokee Bowery</h1>
+                <h1>Cherokee Acq./Bowery</h1>
                 <h3>Parth</h3>
                 <hr class="intro-divider">
                 <ul class="list-inline intro-social-buttons">
@@ -108,17 +108,16 @@
 
     <!-- Page Content -->
     <section id="upload" class="content-section-a">
-
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-5">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Upload your<br>voice message</h2>
-                    <p class="lead">1. Record your message through your Skype headset or your mobile phone <br>
-                    2. Upload your message here (MP3 format preferred, there are free converters online if you need) <br>
-                    3. Listen to your recording here to make sure it worked. If it worked, the link should open a music player in your browser. If the link downloads the file, then your format is incorrect and you need to convert to MP3.</p>
+                    <h2 class="section-heading">Upload your voice message</h2>
+                    <p class="lead">1. Stages 1-4 are setting up your message, contact me if you need help at any stage <br>
+                    2. Record your message through your Skype headset or your mobile phone <br>
+                    3. Upload your message here (MP3 format preferred, there are free converters <a href="http://www.zamzar.com/">online</a> if you need) <br>
+                    4. Listen to your recording here to make sure it worked and sounds the way you like. If the upload worked, the link should open a music player in your browser. If the link downloads the file, then your format is incorrect and you need to convert to MP3.</p>
                 </div>
                 <div class="col-lg-5 offset-lg-2">
                     <img class="img-fluid" src="img/Bowery.jpg" alt="">
@@ -138,8 +137,9 @@
             <div class="col-lg-5">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                    <h2 class="section-heading">Music<br>Acoustic Guitar</h2>
-                    <p class="lead">I've been playing guitar for as long as I can remember, here's a quick sample of me at the Harvard Freshman Talent Show in 2016, feel free to let me know what you think.</p>
+                    <h2 class="section-heading">Call Someone</h2>
+                    <p class="lead">Now that you're set up, you don't need to repeat Steps 1-4 again until you want to upload a new voice message or you close your browser. <br>
+                    5. You can make a call here by typing in the number in Oklahoma you want to dial in the format +14054355647 (no spaces, hyphens, etc.)</p>
                 </div>
             </div>
 
@@ -152,7 +152,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Contact me! <br>+1 617-515-9619</h2>
+                    <h2>Contact Thushan if anything breaks<br>+1 617-515-9619</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
@@ -177,7 +177,7 @@
         <div class="container">
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#">Home</a>
+                    <a href="\index.html">Home</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
