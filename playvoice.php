@@ -4,6 +4,11 @@ use Twilio\Twiml;
 
 $response = new Twiml();
 $response->play(
+	$filename = "storageparth.html";
+	$handle = fopen($filename, "r");
+	$contents = fread($handle, filesize($filename));
+	fclose($handle);
+	echo $contents;
 	// $_SESSION['url'], ["loop" => "5"]
 	// $_SESSION['url']
 	// $_POST['url']

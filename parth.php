@@ -197,6 +197,14 @@
                         });
                   </script>
 
+                    <?php
+                    unlink('storageparth.html');
+                    $fh = fopen('storageparth.html', 'w');
+                    fwrite($fh, $var_value);
+                    fclose($fh);
+
+                  ?>
+
               </div>
             <div class="col-lg-5">
                 <hr class="section-heading-spacer">
