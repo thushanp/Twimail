@@ -138,6 +138,7 @@
                     <!--     <input type="submit" value="Upload FileGlobal" />
                         <input type="submit" value="Upload FileResp"/> -->
                     </form>
+                    <button>Testing ajax</button>
 
                 </div>
             </div>
@@ -267,7 +268,7 @@
               url: $varname
             },
             function(data,status){
-                alert("Data: " + data + "\nStatus: " + status);
+                alert("Data: " + playurl);
             });
         });
     });
