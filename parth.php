@@ -181,17 +181,18 @@
                   <script>
                       $("button").click(function()
                         {
+                          var var_value = $_GET['url'];
                             $.ajax({
                                 url: "playvoice.asp",
                                 type:'POST',
                                 data:
                                 {
-                                    url: $var_value,
+                                    url: var_value,
                                 },
                                 success: function(msg)
                                 {
                                     alert('Email Sent');
-                                }               
+                                }
                             });
                         });
                   </script>
@@ -260,19 +261,6 @@
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            $.post("playvoice.asp",
-            {
-              url: $_GET['url']
-            },
-            function(daurl){
-                alert("Data: " + daurl);
-            });
-        });
-    });
-    </script>
 
 </body>
 
