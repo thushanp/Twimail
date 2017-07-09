@@ -37,7 +37,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Parth's Landing Page</title>
+    <title>Katherine's Landing Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,7 +91,7 @@
         <div class="container">
             <div class="intro-message">
                 <h1>Cherokee Acq./Bowery</h1>
-                <h3>Parth</h3>
+                <h3>Katherine</h3>
                 <hr class="intro-divider">
                 <ul class="list-inline intro-social-buttons">
                     <li class="list-inline-item">
