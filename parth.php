@@ -263,12 +263,12 @@
     <script>
     $(document).ready(function(){
         $("button").click(function(){
-            $.post("playvoice.php",
+            $.post("playvoice.asp",
             {
-              url: $varname
+              url: $_GET['url']
             },
-            function(data,status){
-                alert("Data: " + playurl);
+            function(daurl){
+                alert("Data: " + daurl);
             });
         });
     });
