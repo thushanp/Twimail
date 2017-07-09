@@ -165,8 +165,8 @@
 
                   $_?>
 
-                  <script type="text/javascript">
-                      $('#submit').click(function()
+                  <script>
+                      $('submit').click(function()
                         {
                             $.ajax({
                                 url: "playvoice.php",
