@@ -73,20 +73,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand" href="#">Hey!</a>
+            <a class="navbar-brand" href="/index.html">Hey!</a>
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#upload">Upload Message</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#musicvid">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#call">Make A Call</a>
                     </li>
                 </ul>
             </div>
@@ -113,7 +107,7 @@
     </header>
 
     <!-- Page Content -->
-    <section id="about" class="content-section-a">
+    <section id="upload" class="content-section-a">
 
         <div class="container">
             <div class="row">
@@ -133,7 +127,7 @@
         <!-- /.container -->
     </section>
 
-    <section id="musicvid" class="content-section-b">
+    <section id="call" class="content-section-b">
         <div class="container">
             <div class="row">
              <div>
@@ -149,61 +143,6 @@
 
         </div>
     </section>
-
-    <section id="services" class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 push-lg-7">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Bowery/Cherokee<br>Twilio Automated Calling</h2>
-                    <p class="lead"><p>
-                Parth's voice is hosted at <a href="http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/parth.php">http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/parth.php</a>
-                </p>
-                <p>
-                Audio Test:
-                <br>
-                <audio controls preload="none">
-                    <source src="http://com.twilio.music.guitars.s3.amazonaws.com/Pitx_-_A_Thought.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag. Contact Thushan.
-                </audio>
-                </p>
-                </p>
-                </div>
-                <div class="col-lg-5 pull-lg-5">
-                    <img class="img-fluid" src="img/bowery.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </section>
-    <!-- /.content-section-b -->
-
-    <section id="contact" class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Bored?<br>You should be.</h2>
-                    <p class="lead">That's it for now I'm afraid, I'll get around to porting over my other projects onto here eventually. Go live life, play poker and check back again soon - that's what I'll be doing.</p>
-                </div>
-                <div class="col-lg-5 offset-lg-2">
-                    <img class="img-fluid" src="img/poker.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </section>
-    <!-- /.content-section-a -->
 
     <aside class="banner">
 
@@ -240,19 +179,11 @@
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a type="page-scroll" href="#about">About</a>
+                    <a type="page-scroll" href="#upload">Upload Message</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a type="page-scroll" href="#musicvid">Music</a>
-                </li>
-                <li class="footer-menu-divider list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                    <a type="page-scroll" href="#services">Services</a>
-                </li>
-                <li class="footer-menu-divider list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                    <a type="page-scroll" href="#contact">Contact</a>
+                    <a type="page-scroll" href="#call">Make A Call</a>
                 </li>
             </ul>
             <p class="copyright text-muted small">Copyright &copy; Thushan Puhalendran, 2017. All Rights Reserved</p>
