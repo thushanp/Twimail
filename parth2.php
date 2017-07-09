@@ -91,8 +91,8 @@
     <header class="intro-header">
         <div class="container">
             <div class="intro-message">
-                <h1>Thushan Puhalendran</h1>
-                <h3>Testing Grounds</h3>
+                <h1>Cherokee Bowery</h1>
+                <h3>Parth</h3>
                 <hr class="intro-divider">
                 <ul class="list-inline intro-social-buttons">
                     <li class="list-inline-item">
@@ -115,11 +115,13 @@
                 <div class="col-lg-5">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">What is this?<br>Glad you asked</h2>
-                    <p class="lead">Hey, I'm Thushan Puhalendran, a rising sophomore studying Applied Mathematics at Harvard University. Here's a temporary placeholder for my website - I'll probably be using this to host/test some various bits and pieces for projects I'm working on so it might be pretty messy for now until I get around to actually building it.</p>
+                    <h2 class="section-heading">Upload your<br>voice message</h2>
+                    <p class="lead">1. Record your message through your Skype headset or your mobile phone <br>
+                    2. Upload your message here (MP3 format preferred, there are free converters online if you need) <br>
+                    3. Listen to your recording here to make sure it worked. If it worked, the link should open a music player in your browser. If the link downloads the file, then your format is incorrect and you need to convert to MP3.</p>
                 </div>
                 <div class="col-lg-5 offset-lg-2">
-                    <img class="img-fluid" src="img/Harvard.jpg" alt="">
+                    <img class="img-fluid" src="img/Bowery.jpg" alt="">
                 </div>
             </div>
 
