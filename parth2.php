@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <link rel="shortcut icon" type="image/png" href="/img/torusblue.png"/>
