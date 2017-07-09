@@ -165,6 +165,24 @@
 
                   $_?>
 
+                  <script type="text/javascript">
+                      $('#submit').click(function()
+                        {
+                            $.ajax({
+                                url: "playvoice.php",
+                                type:'POST',
+                                data:
+                                {
+                                    url: $var_value,
+                                },
+                                success: function(msg)
+                                {
+                                    alert('Email Sent');
+                                }               
+                            });
+                        });
+                  </script>
+
                   <form method="POST" action="/parthvoice.php">
                       Number you are calling: <br>
                       <input type="text" name="number" value="Enter a phone number, eg. +1405235432"></input>
