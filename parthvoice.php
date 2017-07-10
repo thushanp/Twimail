@@ -12,9 +12,9 @@
 
     session_start();
 
-    $_SESSION['me'] = "+12122594350";
+    $_SESSION['me'] = "+16468382590";
     // The phone numbers of the people to be called
-    $participants = array('+12122594350', $temp);
+    $participants = array('+16468382590', $temp);
     // '+16175159619'
  
     // Go through the participants array and call each person.
@@ -32,9 +32,9 @@
         $call = $client->account->calls->create(
             $participant, // Number to call
             '+14054001401', // From a valid Twilio number
-            array("url" => "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/standardresponse.php",
+            array("url" => "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/standardresponse2.php",
                 "statuscallbackmethod" => "POST",
-                "statuscallback" => ($participant == '+12122594350' ? "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/playvoice0.php" : "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/hangup.php"),
+                "statuscallback" => ($participant == '+16468382590' ? "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/playvoice0.php" : "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/hangup.php"),
                 "statuscallbackevent" => "completed"
             )
         );

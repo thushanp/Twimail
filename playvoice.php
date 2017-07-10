@@ -2,18 +2,20 @@
 require_once './vendor/autoload.php';
 use Twilio\Twiml;        
 
+$filename = ("storageparth.html");
+$handle = fopen($filename, "r");
+$contents = fread($handle, filesize($filename));
+fclose($handle);
+
 $response = new Twiml();
 $response->play(
-	$filename = "storageparth.html";
-	$handle = fopen($filename, "r");
-	$contents = fread($handle, filesize($filename));
-	fclose($handle);
-	echo $contents;
+	$contents
 	// $_SESSION['url'], ["loop" => "5"]
 	// $_SESSION['url']
 	// $_POST['url']
 	// "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/parth.mp3"
 	);
+$response->hangup();
 // $dial->number(['sendDigits' => 'wwwwwwww5555']);
 
 echo $response;

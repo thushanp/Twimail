@@ -4,7 +4,7 @@ use Twilio\Twiml;
 
 $response = new Twiml();
 $dial = $response->dial();
-$dial->conference('ConferenceParth', ["waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
+$dial->conference('ConferenceParth', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 // $dial->gather(["action" => "/redirectIntoConference?name=example" digits="1"])
 
 echo $response;

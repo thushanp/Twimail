@@ -138,7 +138,6 @@
                     <!--     <input type="submit" value="Upload FileGlobal" />
                         <input type="submit" value="Upload FileResp"/> -->
                     </form>
-                    <button>Testing ajax</button>
 
                 </div>
             </div>

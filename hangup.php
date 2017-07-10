@@ -3,6 +3,6 @@
 	use Twilio\Twiml;
 
 	$response = new Twiml();
-	$response->reject();
+	$response->hangup();
 
 	echo $response;
