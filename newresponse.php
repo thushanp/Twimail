@@ -64,17 +64,17 @@ elseif ($number = "+12125944329") {
 
 elseif ($number = "+19092220290") {
     $dial = $response->dial();
-    $dial->conference('ConferenceEvan', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
+    $dial->conference('ConferenceParth', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
 elseif ($number = "+16175159619") {
     $dial = $response->dial();
-    $dial->conference('ConferenceEvan', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
+    $dial->conference('ConferenceBrad', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
 elseif ($number = "+12122594350") {
     $dial = $response->dial();
-    $dial->conference('ConferenceEvan', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
+    $dial->conference('ConferenceBrian', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
 elseif ($number = "+16103315919") {
