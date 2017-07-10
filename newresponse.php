@@ -40,47 +40,52 @@ $companypeople = array(
 if(!$number = $companypeople[$_REQUEST['From']])
     $number = "other";
 
-else $number = $_REQUEST['From'];
+// $example = $number . " " . $_REQUEST['From'];
+// unlink('example.html');
+// $fh = fopen('example.html', 'w');
+// fwrite($fh, $example);
+// fclose($fh);
 
 
-if ($number = "+12122594304") {
+
+if ($number == "+12122594304") {
     $dial = $response->dial();
     $dial->conference('ConferenceParth', ["waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
-elseif ($number = "+12122594318") {
+elseif ($number == "+12122594318") {
     $dial = $response->dial();
     $dial->conference('ConferenceBrad', ["waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
-elseif ($number = "+12122594333") {
+elseif ($number == "+12122594333") {
     $dial = $response->dial();
     $dial->conference('ConferenceBrian', ["waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
-elseif ($number = "+12125944329") {
+elseif ($number == "+12125944329") {
     $dial = $response->dial();
     $dial->conference('ConferenceEvan', ["waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
 // now for Twilio numbers
 
-elseif ($number = "+19092220290") {
+elseif ($number == "+19092220290") {
     $dial = $response->dial();
     $dial->conference('ConferenceParth', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
-elseif ($number = "+16175159619") {
+elseif ($number == "+16175159619") {
     $dial = $response->dial();
     $dial->conference('ConferenceBrad', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
-elseif ($number = "+12122594350") {
+elseif ($number == "+12122594350") {
     $dial = $response->dial();
     $dial->conference('ConferenceBrian', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
 
-elseif ($number = "+16103315919") {
+elseif ($number == "+16103315919") {
     $dial = $response->dial();
     $dial->conference('ConferenceEvan', ["endConferenceOnExit" => "true", "waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
 }
