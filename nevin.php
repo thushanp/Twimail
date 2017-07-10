@@ -178,7 +178,8 @@
                 <div class="clearfix"></div>
                     <h2 class="section-heading">Call Someone</h2>
                     <p class="lead">Now that you're set up, you don't need to repeat Steps 1-4 again until you want to upload a new voice message or you close your browser. <br><br>
-                    5. You can make a call here by typing in the number in Oklahoma you want to dial in the format +14054355647 (no spaces, hyphens, etc.)</p>
+                    5. You can make a call here by typing in the number in Oklahoma you want to dial in the format +14054355647 (no spaces, hyphens, etc.)<br>
+                    6. If you reach an answering machine, hangup after the beep and your voice message will play. You can confirm your voicemail is playing by calling +14054001401 and you will hear it being played to the answering machine.</p>
                 </div>
             </div>
 

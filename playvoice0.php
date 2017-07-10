@@ -21,7 +21,7 @@
         // Fixed old code should work now (fingers crossed):
         $call = $client->account->calls->create(
             '+14054001401', // Number to call
-            '+14054001401', // From a valid Twilio number
+            '+19092220290', // From a valid Twilio number
             array("url" => "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/playvoice.php")
         );
 
