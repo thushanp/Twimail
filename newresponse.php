@@ -40,6 +40,9 @@ $companypeople = array(
 if(!$number = $companypeople[$_REQUEST['From']])
     $number = "other";
 
+else $number = $_REQUEST['From'];
+
+
 if ($number = "+12122594304") {
     $dial = $response->dial();
     $dial->conference('ConferenceParth', ["waitUrl" => "http://twimlets.com/holdmusic?Bucket=com.twilio.music.classical"]);
