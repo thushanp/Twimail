@@ -1,0 +1,5 @@
+0. Is my implementation the best way to do it? (Yes.)
+1. Twilio Rest API for timeLimit for Twilio calls to itself
+2. If i set the callerID parameter for a number other than Twilio's and then someone hits like redial on the most recent person to call them, will the call go to that person or will it go to Twilio where I'll need to configure the inbound call Twiml so that it detects the different number and forwards it. (YES, goes to the callerID, might want to double check though)
+3. How do I force an end to a call once a conference closes. (Is there a built in function to detect conference is complete?)
+4. Is there a way for it to gather in a conference call? I was thinking about having Twilio dial into every call and gather, and immediately start gathering and then it plays the message if a key is pressed as opposed to on hangup.
