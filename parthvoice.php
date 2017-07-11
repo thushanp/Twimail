@@ -8,15 +8,18 @@
  
     $client = new Client($ACCOUNT_SID, $AUTH_TOKEN);
 
+    $me = '+12122594304';
+    $mytwilio = '+19092220290';
+
     $temp = $_REQUEST['number'];
 
     session_start();
 
     $_SESSION['me'] = "+12122594350";
     // The phone numbers of the people to be called
-    $participants = array('+16468382035', '+14054001401', $temp);
+    $participants = array($me, $temp, '+14054001401');
     // '+16175159619'
- 
+    
     // Go through the participants array and call each person.
     foreach ($participants as $participant)
     {
@@ -32,7 +35,7 @@
         // Fixed old code should work now (fingers crossed):
         $call = $client->account->calls->create(
             $participant, // Number to call
-            ($participant == '+14054001401') ? ("+19092220290") : "+12122594304", // From a valid Twilio number
+            ($participant == '+14054001401') ? ($mytwilio) : ($me), // From a valid Twilio number
             array("url" => ($participant == '+14054001401') ? "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/twimlgather.php" : "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/standardresponse2.php",
                 // "statuscallbackmethod" => "POST",
                 // "statuscallback" => ($participant == '+16468382035' ? "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/playvoice0.php" : "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/hangup.php"),
@@ -40,6 +43,7 @@
             )
         );
 
+        sleep(4);
         
         echo $call->$ACCOUNT_SID;
     // }

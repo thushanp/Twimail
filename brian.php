@@ -32,6 +32,8 @@
     });
     </script>
 
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -115,7 +117,7 @@
                     <h2 class="section-heading">Upload your voice message</h2>
                     <p class="lead">1. Stages 1-4 are setting up your message, contact me if you need help at any stage <br>
                     2. Record your message through your Skype headset or your mobile phone <br>
-                    3. Upload your message here (MP3 format preferred, there are free converters <a href="http://www.zamzar.com/">online</a> if you need) <br>
+                    3. Upload your message here and then hit return (MP3 format preferred, there are free converters <a href="http://www.zamzar.com/">online</a> if you need) <br>
                     4. Listen to your current saved message, if any, 
                     <a href=<?php 
                                   $var_value = $_GET['varname'];
@@ -129,10 +131,10 @@
                 <div class="col-lg-5 offset-lg-2">
                     <img class="img-fluid" src="img/bearbull.png" alt="">
                     <br>
-                    <form enctype="multipart/form-data" action="upload.php" method="POST">
+                    <form enctype="multipart/form-data" action="uploadbrian.php" method="POST">
                         <input type="hidden" name="MAX_FILE_SIZE"/>
                         Choose a file to upload: <input name="file" type="file" id="file"/><br />
-                        <input type="submit" value="Upload File"/>
+                        <input id = "test" type="submit" value="Upload File"/>
                     <!--     <input type="submit" value="Upload FileGlobal" />
                         <input type="submit" value="Upload FileResp"/> -->
                     </form>
@@ -165,21 +167,51 @@
 
                   $_?>
 
-                  <form method="POST" action="/parthvoice.php">
+
+                  <form method="POST" action="/brianvoice.php">
+<!--                   <form> -->
                       Number you are calling: <br>
                       <input type="text" name="number" value="Enter a phone number, eg. +1405235432"></input>
                       <input type="hidden" name="varname" value= <?php echo $var_value?>>
                       <br>
                       <input type="submit" value="Submit"></input>
                   </form>
+
+                  <script>
+                      $("button").click(function()
+                        {
+                          var var_value = $_GET['url'];
+                            $.ajax({
+                                url: "playvoice.asp",
+                                type:'POST',
+                                data:
+                                {
+                                    url: var_value,
+                                },
+                                success: function(msg)
+                                {
+                                    alert('Email Sent');
+                                }
+                            });
+                        });
+                  </script>
+
+                    <?php
+                    unlink('storagebrian.html');
+                    $fh = fopen('storagebrian.html', 'w');
+                    fwrite($fh, $var_value);
+                    fclose($fh);
+
+                  ?>
+
               </div>
             <div class="col-lg-5">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                     <h2 class="section-heading">Call Someone</h2>
-                    <p class="lead">Now that you're set up, you don't need to repeat Steps 1-4 again until you want to upload a new voice message or you close your browser. <br><br>
-                    5. You can make a call here by typing in the number in Oklahoma you want to dial in the format +14054355647 (no spaces, hyphens, etc.)<br>
-                    6. If you reach an answering machine, hangup after the beep and your voice message will play. You can confirm your voicemail is playing by calling +14054001401 and you will hear it being played to the answering machine.</p>
+                    <p class="lead">Now that you're set up, you don't need to repeat Steps 1-4 again until you want to upload a new voice message or you close your browser. An easy way to check if your message is currently saved is if the URL is very long and of a format similar to: "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/parth.php?varname=http%3A%2F%2Fec2-13-59-179-35.us-east-2.compute.amazonaws.com%2Fupload%2Fparth.mp3" <br><br>
+                    5. You can make a call here by typing in the number in Oklahoma you want to dial in the format +14054355647 (include the +1, no spaces, hyphens, etc.) <br>
+                    6. If you reach an answering machine, press "9#" after the beep and your voice message will play. You can then freely hang up and make another call if you like or wait until it ends.</p>
                 </div>
             </div>
 
@@ -236,6 +268,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
 
 </body>
 
