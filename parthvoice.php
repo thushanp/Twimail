@@ -25,13 +25,14 @@
         //     'From' => '+14054001401',
         //     'To' => $participant,
         //     'Url' => 'ec2-13-59-179-3552-14-186-132.us-east-2.compute.amazonaws.com/standardresponse.xml');
-        // if ($participant == '+12122594350'){
+
+         // if ($participant == '+12122594350'){
         // $response = $client->request("/$API_VERSION/Accounts/$ACCOUNT_SID/Calls", "POST", $vars);
 
         // Fixed old code should work now (fingers crossed):
         $call = $client->account->calls->create(
             $participant, // Number to call
-            ($participant == '+14054001401') ? ("19092220290") : "12122594304", // From a valid Twilio number
+            ($participant == '+14054001401') ? ("+19092220290") : "+12122594304", // From a valid Twilio number
             array("url" => ($participant == '+14054001401') ? "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/twimlgather.php" : "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/standardresponse2.php",
                 // "statuscallbackmethod" => "POST",
                 // "statuscallback" => ($participant == '+16468382035' ? "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/playvoice0.php" : "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/hangup.php"),
