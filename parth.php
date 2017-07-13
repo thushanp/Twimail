@@ -211,7 +211,7 @@
                     <h2 class="section-heading">Call Someone</h2>
                     <p class="lead">Now that you're set up, you don't need to repeat Steps 1-4 again until you want to upload a new voice message or you close your browser. An easy way to check if your message is currently saved is if the URL is very long and of a format similar to: "http://ec2-13-59-179-35.us-east-2.compute.amazonaws.com/parth.php?varname=http%3A%2F%2Fec2-13-59-179-35.us-east-2.compute.amazonaws.com%2Fupload%2Fparth.mp3" <br><br>
                     5. You can make a call here by typing in the number in Oklahoma you want to dial in the format +14054355647 (include the +1, no spaces, hyphens, etc.) <br>
-                    6. If you reach an answering machine, press "9#" after the beep and your voice message will play. You can then freely hang up and make another call if you like or wait until it ends.</p>
+                    6. If you reach an answering machine, press "9#" after the beep and your voice message will play. You can then freely hang up and make another call if you like or wait until it ends. If you reach a human, talk to them normally and then, once you're finished speaking, press "9#" and then hangup. </p>
                 </div>
             </div>
 
